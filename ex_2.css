@@ -1,0 +1,26 @@
+.color-change {
+    /* color: red; */
+    /* color: rgb(255, 0, 0,);  RGB */
+    /* color: rgb(255, 0, 0, 1); RGBA */
+    color: #FF0000;    /*HEX 코드*/ 
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    text-decoration: underline overline;
+    text-align: center; /*중앙 정렬*/
+    font-weight: 900;  /* 굵기*/
+    font-size: 20px;
+    font-style: italic; /*기울기*/
+    background-color: aqua;
+    border: 2px solid blue;
+}
+
+.child {
+    width: 2rem;
+    height: 2rem;
+    font-size: 10px;
+    background-color: darkgray;
+    border: 2px solid black;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz1</title>
+
+
+    <style>
+
+        .display-A {
+            display: inline;
+        }
+        .display-B {
+            display: inline-block;
+            color: blue;
+            text-decoration: underline;
+            font-weight: 900;
+            
+        }
+        
+
+        table {
+            width: 1200px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: powderblue;
+            border-collapse: collapse;
+        }
+
+        thead td {
+            border: 1px solid rgb(0, 0, 0);
+            background-color:cyan;
+            font-size: larger;
+            font-weight: 900;
+                   }
+
+        tbody td {
+            border: 1px solid rgb(10, 10, 10);
+            background-color: aliceblue;
+            font-weight: 600;
+            }
+
+            .money{
+                font-weight: bold;
+               height: 50px;
+            }
+            .a1 {
+                color: blue;
+            }
+            .a2 {
+                color: red;
+            }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>실습 문제 1</h1>
+           <h3 class="display-A">2023년 9월 가계부 : <a href="https://sikida.tistory.com/" >조회하기</a>
+            <br><br>
+           <!-- <h3 class="display-B"><a href="https://sikida.tistory.com/" ></a> 조회하기 </h3> -->
+
+
+    <table>
+        <thead>
+            <tr>
+                <td>날짜</td>
+                <td>입금</td>
+                <td>내역</td>
+                <td>출금</td>
+                <td>내역</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023-09-20</td>
+                <td class="a1">+100,000원</td>
+                <td>부수입(투잡)</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2023-09-21</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="a2">-350,000원</td>
+                <td>마우스, 키보드, 의자 구입</td>
+            </tr>
+            <tr>
+                <td>2023-09-22</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="a2">-135,000원</td>
+                <td>인터넷. 핸드폰비</td>
+            </tr>
+            <tr>
+                <td>2023-09-22</td>
+                <td class="a1">+1,000,000원</td>
+                <td>월급</td>
+                <td class="a2">-250,000원</td>
+                <td>카드값</td>
+            </tr>
+            <tr>
+                <td class="money" colspan="5">남은 금액 : 590,000원</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

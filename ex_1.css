@@ -1,0 +1,69 @@
+/* 전체 선택자
+*{   
+    color: rgb(1, 9, 9);
+    font-size: 10px;
+} */
+
+
+/* 태그 선택자 */
+span{
+    color: blue; 
+    font-size: 8px; 
+}
+
+/* 속성 선택자 */
+p[class="p-tag-text"]{
+    color: blueviolet;
+    font-size: 10px;
+
+}
+
+/* 아이디 선택자 */
+#p-tag-id{
+    color: blue;
+}
+
+/* 클래스 선택자 */
+.p-tag-class{
+    color: red;
+}
+
+/* 
+        div > h4   자식 선택자
+        div h4     후손 선택자
+*/
+div > h4 {
+    background-color: bisque;
+}
+
+
+/* 동위 선택자 */
+/* h3 바로 뒤에 있는 한개의 p 선택자 선택 */
+h3 + p{
+    color: maroon;
+}
+
+
+/* 버튼 선택자 */
+/* 마우스가 버튼 위로 올라갔을때 */
+.button:hover {         
+    background-color: aqua;
+}
+/* 마우스로 클릭했을때 */
+.button:active {
+   background-color: chartreuse;
+}
+
+
+input:focus {
+    border : 5px solid red;
+}
+
+input:enabled {
+    color: green;
+}
+
+input:disabled {
+    color: red;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>양식 요소 활용하기</h1>
+    <a href="../main.html">메인 페이지로 이동</a>
+    <br><br>
+
+    <fieldset>
+        <legend>input 태그</legend>
+        <h3>사용자로부터 입력을 받을 때 사용</h3>
+        <ol>
+            <li>text : 사용자로부터 문자를 입력받을 때 사용</li>
+            <input type="text">
+            <li>password : 사용자로부터 비밀번호를 입력받을 때 사용</li>
+            <input type="password">
+            <li>search, ur1, email : text와 동일하지만 세분화된 기능을 제공</li>
+            <form action="">
+            <input type="search">
+            <input type="ur1">
+            <input type="email">
+            <button type="submit">버튼</button>
+        </form>
+        <li> textarea : 여러줄을 입력받을 수 있는 태그</li>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <li>number : 숫자를 입력받을 수 있는 태그(스핀박스 생성)</li>
+        <input type="number">
+        <li>range : 슬라이드바를 사용한 숫자를 입력하는 태그</li>
+        <input type="range">
+        <li>날짜를 입력받는 태그들
+            <ul>
+                <li>date : <input type="date"> </li>
+                <li>month : <input type="month"> </li>
+                <li>week : <input type="week"> </li>
+                <li>time : <input type="time"> </li>
+                <li>datetime-local : <input type="datetime-local"> </li>
+            </ul>
+        </li>
+        <li>radio : 하나만 선택해야할 때 사용</li>
+        <form action="">
+            <input type="radio" name="check-radio"> 선택안함
+            <input type="radio" name="check-radio"> 남자
+            <input type="radio" name="check-radio"> 여자
+        </form>
+        <li>checkbox : 여러개 선택이 가능할 때 사용</li>
+        <form action="">
+            <input type="checkbox" name="check-box"> 선택안함
+            <input type="checkbox" name="check-box"> 남자
+            <input type="checkbox" name="check-box"> 여자
+        </form>            
+
+        </ol>
+
+    </fieldset>
+    
+</body>
+</html>

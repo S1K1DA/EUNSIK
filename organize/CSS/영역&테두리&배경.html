@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div-area {
+            padding-bottom: 20px;
+        }
+        .border-style {
+            width: 50px;
+            height: 50px;
+        }
+        .border-style-1{
+            border-style: dotted;
+            border-bottom-right-radius: 30px;
+            box-shadow: 5px 5px 10px 10px lightblue;
+        }
+        .border-style-2{
+            margin-top: 30px;
+            border-color: grey;
+            border-style: outset;
+            border-radius: 50px;
+        }
+        .border-style-3{
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-color: palegreen;
+            border-top: dashed;
+            border-right: double;
+            border-left: inset;
+            border-bottom: ridge;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 5px 5px 5px 5px greenyellow;
+        }
+
+        .background-style-1 {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid lightblue;
+            background-color: lightcyan;
+            background-image: url(../00501111_20190121.jpg);
+            background-repeat: repeat;
+            /* background-size: cover; */
+            background-position:50px 50px;
+            background-attachment: scroll;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>영역&테두리&배경</h1>
+    <a href="../main.html">메인 페이지로 이동</a>
+    <br><br>
+    <fieldset>  
+        <legend>영역</legend>
+        <h3>div 태그</h3>
+        <div class="div-area">컨텐츠 영역</div>
+        <p>content : width, height 속성을 사용하여 가로/세로 길이를 정할 수 있음</p>
+        <p>padding : 컨텐츠와 테두리 사이에 존재하는 영역(padding, padding-top, padding-bottom,...)</p>
+        <p>magin : 테두리 바깥에 존재하는 영역(magin, magin-top, magin-left,...)</p>
+
+    </fieldset>
+
+    <br>
+<!-- 테두리의 스타일 -->
+    <fieldset>
+        <legend>테두리</legend>
+        <pre>
+            선택자 { <!-- 테두리의 스타일 -->
+                border-위치-style: solid/dotted/dashed/double/groove/none,...
+            }
+
+            선택자 { <!-- 테두리의 두께 -->
+                border-위치-width: 값;
+            }
+
+            선택자 { <!-- 테두리의 색상 -->
+                border-위치-color: 색상;
+            }
+
+            선택자 { <!-- 테두리의 스타일,두께,색상 -->
+                border : 두께 스타일 색상;
+            }
+
+            선택자 {   <!-- 모서리 동그랗게 -->
+                border-radius: 값;
+            }
+
+            선택자 { <!-- 그림자 효과 -->
+                box-shadow : 가로 세로 흐림 번짐 색상;
+            }
+        </pre>
+
+        <div class="border-style border-style-1"></div>
+        <div class="border-style border-style-2"></div>
+        <div class="border-style border-style-3"></div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>배경</legend>
+        <div class="border-style background-style-1"></div>
+        <div class="border-style background-style-2"></div>
+        <div class="border-style background-style-3"></div>
+    </fieldset>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

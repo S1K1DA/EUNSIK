@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+
+    <style>
+        main{
+            padding-top: 10px;
+        }
+
+        
+        button {
+            margin-top: 20px;
+            margin-left: 1700px;
+            color: aliceblue;
+            background-color: #333;
+            border-radius: 8px;
+        }
+
+        button:hover{
+            text-decoration: underline;
+        }
+
+        table {
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 95%;
+            height: 200px;
+            border: 1px solid black;
+        }
+        thead td{
+            color: white;
+            background-color: #333;
+        }
+        tbody td{
+            border: 1px solid black;
+        }
+
+
+
+        
+    </style>
+
+
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+
+</head>
+<body>
+    <header>
+        나의 홈페이지
+        <p class="b">
+            <a href="./login.html">로그인</a> <a href="./register.html">회원가입</a>
+        </p>
+    </header>
+    <nav>
+        <th>
+            <a class="a" href="./main.html">홈</a>
+            <a class="a" href="./introduse.html">소개</a>
+            <a class="a" href="./portfolio.html">포트폴리오</a>
+            <a class="a" href="./boardList.html">게시판</a>
+            <a class="a" href="./contact.html">연락하기</a>
+        </th>
+    </nav>
+
+
+    <main> 
+        <a href="./boardEnroll.html"type="submit"><button>등록</button></a><br>
+        <table>
+            <thead class="th">
+                <tr>
+                    <td>제목</td>
+                    <td>글쓴이</td>
+                    <td>내용</td>
+                </tr>
+            </thead>
+            <tbody class="td">
+                <tr>
+                    <td>은식이 천재</td>
+                    <td>은식이</td>
+                    <td>은식이는 천재인것을 알고있나여?</td>
+                </tr>
+                <tr>
+                    <td>은식이 천재</td>
+                    <td>은식이</td>
+                    <td>은식이는 천재인것을 알고있나여?</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        저희 홈페이지에 방문해 주셔서 감사합니다.
+    </footer>
+    
+</body>
+</html>
