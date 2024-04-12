@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:not(.items) {
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            /* transition-property: width, background-color;
+            transition-duration: 5s;
+            transition-delay: 1s;
+            transition-timing-function: step-end; */
+        }
+
+        div:hover {
+            /* width: 800px;
+            background-color:blue; */
+        }
+
+        #trans-late:hover {
+            transform: translate(50px, 50px);
+        }
+
+        #trans-x:active {
+            transform: translateX(30px);
+        }
+
+        #trans-y:active {
+            /* transform: translateY(50px); */
+            transform: perspective(150px) translateZ(80px);
+        }
+
+        #scale:active {
+            transform: scaleY(2);
+        }
+
+        #skew:active {
+            transform: skew(30deg, 30deg);
+            transform: rotate(180deg)
+        }
+
+        .items:hover div{
+            transform: translate(500px);
+        }
+
+        #item-1 {
+            transition: all 5s linear;
+        }
+
+        #item-2 {
+            transition: all 5s ease;
+        }  
+        #item-3 {
+            transition: all 5s ease-in;
+        }  
+        #item-4 {
+            transition: all 5s ease-out;
+        }  
+        #item-5 {
+            transition: all 5s ease-in-out;
+        }  
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- (img+br)*3 -->
+    <img id="trans-late" src="./organize/다운로드 (1).jfif" alt=""><br>
+    <img id="trans-x" src="./organize/다운로드 (1).jfif" alt=""><br>
+    <img id="trans-y" src="./organize/다운로드 (1).jfif" alt=""><br>
+    
+    
+    <img id="scale" src="./organize/다운로드 (1).jfif" alt=""><br>
+    <img id="skew" src="./organize/다운로드 (1).jfif" alt=""><br>
+    
+    <div class="items">
+        <h3> linear : 시작과 끝이 동일한 속도</h3>
+        <div id="item-1"></div>
+    
+        <h3> ease : (기본값) 초반 느리게, 끝으로 갈수록 빠르게</h3>
+        <div id="item-2"></div>
+    
+        <h3> ease-in : 점점 빠르게</h3>
+        <div id="item-3"></div>
+    
+        <h3> ease-out : 점점 느리게</h3>
+        <div id="item-4"></div>
+    
+        <h3> ease-in-out : 초반 느리게, 중간에 가장 빠르게, 끝을 느리게</h3>
+        <div id="item-5"></div>
+
+    </div>
+
+
+
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
