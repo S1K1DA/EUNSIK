@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: antiquewhite;
+        }
+        button:active {   /* 요소가 활성화 되었을때 */
+            background-color: aquamarine;
+            transform: translateY(50px);   /*요소를 활성화 시켰을때 이동시킴*/
+        }
+        button:hover {   /*마우스가 올라갔을 때*/
+            background-color: blueviolet;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+        a:link {
+            color: antiquewhite;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: aquamarine;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <button>클릭</button>
+    <input type="text">
+    <br>
+    <a href="https://www.naver.com">네이버로 이동</a>
+</body>
+</html>
