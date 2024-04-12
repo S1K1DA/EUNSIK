@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 0~768px 까지 컬러를 블루로 하겠다는 의미 */
+        @media (max-width: 768px) {   
+            body {
+                color: blue;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                color: red;
+            }
+        }
+
+        .aside {
+            float: right;
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            display: none;
+        }
+
+        @media (min-width: 905px) {
+            .aside {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    미디어 쿼리 테스트중
+    <div class="aside">광고중</div>
+    
+</body>
+</html>
