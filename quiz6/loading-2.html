@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            margin: 0;
+            height: 100vh;
+            background-color: #87ceeb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .progress-container {
+            border-radius: 10px;
+            width: 50%;
+            background-color: #f0f0f0;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 30px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            animation: progress-bar 5s linear 1;
+            animation-fill-mode: both;
+        }
+
+        @keyframes progress-bar {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+    
+</body>
+</html>
