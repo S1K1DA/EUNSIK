@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-size {       /* 공통적으로 들어가는거 클래스로 따로 만들어주기*/
+            width: 200px;
+            height: 200px;
+            margin: 100px 100px;
+        }
+
+        .box {
+            
+            background-color: aquamarine;
+            animation-name: grow;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s;
+        }
+
+        
+        @keyframes grow {
+            0% {
+                transform: scale(1);
+                background-color: aquamarine;
+            }
+            50% {
+                transform: scale(1.5);
+                background-color: chocolate;
+            }
+            100% {
+                transform: scale(1);
+                background-color: lightsteelblue;
+            }
+        }
+
+        .box-2 {
+            
+            background-color: red;
+            animation-name: key-2;    /* 적용할 애니메이션 이름*/
+            animation-duration: 5s;   /* 완료까지 걸리는 시간*/
+            animation-timing-function: ease-in-out;  /**/
+            animation-iteration-count: 1;  /* 반복 횟수 */
+            animation-fill-mode: both;   /* 마지막 상태를 유지 */
+            animation-play-state: running;
+        }
+
+        .box-2:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes key-2 {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(200px);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .box-3 {
+            background-color: blue;
+            animation-name: key-3;
+            animation-duration: 5s;
+            
+        }
+
+        @keyframes key-3 {
+            0% {
+                transform: rotate(45deg);
+                background-color: lightblue;
+            }
+            30% {
+                transform: scale(1.2);
+                background-color: aquamarine;
+            }
+            50% {
+                transform: scale(1.5);
+                background-color: aqua;
+            }
+            100% {
+                transform: scale(2);
+                background-color: blue;
+            }
+        }
+        .box-4 {
+            background-color: turquoise;
+            animation-name: key-4;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .box-4:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes key-4 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box-size box"></div>
+    <hr>
+    <div class="box-size box-2"></div>
+    <hr>
+    <div class="box-size box-3"></div>
+    <hr>
+    <div class="box-size box-4"></div>
+    <hr>
+
+
+</body>
+</html>
