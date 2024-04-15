@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        /* 네이게이션 스타일링 */
+        .menu-container {
+            background-color: #666;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-container ul {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu-container ul li {
+            display: inline-block;
+            margin: 0px 15px;
+        }
+
+        .menu-container ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        menu-container ul li a:hover {
+            text-decoration: underline;
+        }
+        /* 메인 스타일링 */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;  /*700px*/
+        }
+        /* 푸터 스타일링 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        section {
+            width: 70vh;
+        }
+
+        .btn-container {
+            text-align: right;
+        }
+
+        /* 페이지네이션 중앙 정렬 */
+        .paigination-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+
+    </header>
+    <nav class="menu-container">
+        <ul>
+            <li><a href="./ex_14_home.html">Home</a></li>
+            <li><a href="./ex_14_about.html">About</a></li>
+            <li><a href="./ex_14_services.html">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </nav>
+    
+    <main>
+        <section>
+            <div class="btn-container">
+                <button type="button" class="btn btn-primary">등록</button>
+            </div>
+
+            <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+              <nav aria-label="Page navigation example" class="paigination-container">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>&copy; 2024 Example site. All rights reserved.</h4>
+    </footer>
+</body>
+
+</html>
