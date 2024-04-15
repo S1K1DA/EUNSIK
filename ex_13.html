@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- 반응형 웹 디자인을 할 때 기본이 되는 기능으로써, 뷰포트의 크기에 따라 서로 다른 
+레이아웃을 생성할 수 있음 -->
+    <title>미디어쿼리</title>
     <style>
+        @media (max-width: 768px) {
 
-        /* 0~768px 까지 컬러를 블루로 하겠다는 의미 */
-        @media (max-width: 768px) {   
+            /* 화면이 768px 이하일 때 색상이 blueviolet */
             body {
-                color: blue;
+                color: blueviolet;
             }
         }
 
         @media (min-width: 1024px) {
+
+            /* 1024px 이상일때 색상이 hotpink */
             body {
-                color: red;
+                color: hotpink;
             }
         }
 
@@ -23,21 +28,23 @@
             float: right;
             width: 500px;
             height: 500px;
-            background-color: antiquewhite;
+            background-color: lightpink;
             display: none;
+            /*aside 기본설정 display: none*/
         }
 
         @media (min-width: 905px) {
+            /*905px보다 클때만 aside광고중이 보이게 설정*/
             .aside {
                 display: block;
             }
         }
     </style>
-
 </head>
+
 <body>
-    미디어 쿼리 테스트중
+    미디어 쿼리 테스트 중
     <div class="aside">광고중</div>
-    
 </body>
+
 </html>
