@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* banner > button */
+
+        .banner-container {
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: white;
+            background-size: cover;
+            width: 100%;
+            height: 5vh;
+        }
+
+        .banner-container>a {
+            padding: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* banner > sign in */
+
+        .signin {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .signin>a {
+            padding: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 위에 메인 CSS */
+
+        .image {
+            background-image: url(./white_airplane-wallpaper-1920x1080.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 130vh;
+        }
+
+        .main-text {
+            margin: 0;
+            padding-top: 100px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            background-color: blue;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .search-box {
+            background-color: aliceblue;
+            border: 1px solid black;
+            margin-right: 10px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+
+        .button {
+            margin-right: 10px;
+        }
+
+        .search-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            text-decoration: underline;
+        }
+
+        .check-in-out {
+            margin: 0px;
+            margin-right: 5px;
+            text-align: center;
+            border: 1px solid black;
+            background-color: aliceblue;
+
+
+        }
+
+        .input-date {
+            height: 25px;
+            font-size: 20px;
+            font-style: normal;
+            text-align: center;
+        }
+
+        .people1 {
+            margin: 0px;
+            margin-right: 5px;
+            border: 1px solid black;
+            background-color: aliceblue;
+            text-align: center;
+            width: 50px;
+        }
+    </style>
+
+</head>
+<link rel="stylesheet" href="./banner.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./header.css">
+
+<!-- <link rel="stylesheet" href="./Main.css"> -->
+
+<body>
+    <header>
+        <nav class="banner-container">
+            <a href="./Main.html">
+                <div class="logo"></div>
+            </a>
+            <a href="./Detail.html">DETAIL</a>
+            <!-- 2depth -->
+        <div class="main-menu">
+            <a href="">REVIEW</a>
+                <div class="sub-menu">
+                    <li><a href="./Review-asia.html">ASIA</a></li>
+                    <li><a href="./Review-europe.html">EUROPE</a></li>
+                    <li><a href="./Review-ko.html">KO</a></li>
+                </div>
+        </div>
+            <!-- 2depth -->
+
+            <div class="signin">
+                <a href="./login.html">로그인</a>
+                <a href="./register.html">회원가입</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="image">
+        <div class="main-text">
+            <h1>검색을 통해 여행지 및 다양한 숙소를 확인하세요!</h1>
+            <h3>그리고 여행지 비용을 비교하고 저렴한 여행 패키지를 확인하세요!</h3>
+        </div>
+        <div class="Searchbox">
+            <div></div>
+        </div>
+
+        <div class="container">
+            <input type="text" class="search-box" placeholder="예시 : 제주도">
+            <div id="date-input-container">
+                <p class="check-in-out">check-in</p>
+                <input type="date" class="input-date">
+            </div>
+            <div id="date-input-container">
+                <p class="check-in-out">check-out</p>
+                <input type="date" class="input-date">
+            </div>
+            <div id="date-input-container">
+                <p class="people1">성인</p>
+                <input type="number" style="width: 45px;">
+            </div>
+            <div id="date-input-container">
+                <p class="people1">어린이</p>
+                <input type="number" style="width: 45px;">
+            </div>
+            <a href="./Detail_1.html"><button class="search-button">검색</button></a>
+        </div>
+
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <table class="table">
+            <thead>
+                <th>도움말-문의</th>
+                <th>회사명</th>
+                <th>여행지</th>
+                <th>파트너</th>
+                <th>모바일 GREEN</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>도움말센터</td>
+                    <td>회사 소개</td>
+                    <td>국가별</td>
+                    <td>YCS 파트너 포털</td>
+                    <td>IOS</td>
+                </tr>
+                <tr>
+                    <td>자주 묻는 질문 FAQ</td>
+                    <td>채용 정보</td>
+                    <td>도시별</td>
+                    <td>Partner Hub</td>
+                    <td>Android</td>
+                </tr>
+                <tr>
+                    <td>개인정보 처리방침</td>
+                    <td>프레스센터 / 보도자료</td>
+                    <td></td>
+                    <td>광고문의</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>쿠키 정책</td>
+                    <td>블로그</td>
+                    <td></td>
+                    <td>제휴 파트너</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>이용 약관</td>
+                    <td>포인트맥스</td>
+                    <td></td>
+                    <td>커넥티비티 파트너</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>쿠키 설정 관리</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Digital Service Act(EU)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="spon">
+            <a href="https://flyairseoul.com/CW/ko/main.do" target="_blank"><img src="./img/airplane.svg"
+                    alt="airplane"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="./img/caret-right-square-fill.svg"
+                    alt="youtube"></a>
+            <a href="https://www.weather.go.kr/w/index.doa" target="_blank"><img src="./img/cloud-rain-heavy-fill.svg"
+                    alt="weather"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.svg" alt="instagram"></a>
+            <a href="https://www.threads.net/login" target="_blank"><img src="./img/threads-fill.svg" alt="threads"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

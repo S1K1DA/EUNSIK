@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* banner > button */
+        body {
+            margin: 0;
+        }
+
+        .banner-container {
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: white;
+            background-size: cover;
+            width: 100%;
+            height: 5vh;
+        }
+
+        .banner-container>a {
+            padding: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* banner > sign in */
+
+        .signin {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .signin>a {
+            padding: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 로그인 전체 영역박스 */
+        .login-container {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: 480px;
+            height: 80vh;
+            margin: 0 auto;
+            padding: 25px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 로그인 머릿글 */
+        .login-main {
+            float: left;
+        }
+
+        /* 로그인 선택(이메일&휴대전화) */
+        .login-links {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .login-email {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .login-email:hover {
+            font-weight: bold;
+            color: dodgerblue;
+        }
+
+        .login-phone {
+            width: 100%;
+            text-align: center;
+            padding-left: 100px;
+        }
+
+        .login-phone:hover {
+            font-weight: bold;
+            color: dodgerblue;
+        }
+
+
+        /* 이메일, 비밀번호 input박스 */
+        .login-box {
+            margin-bottom: 25px;
+        }
+
+        .login-box input {
+            margin-top: 15px;
+            display: block;
+            border-radius: 5px;
+            width: 475px;
+            height: 35px;
+        }
+
+        /* 로그인 버튼 */
+        .login-button {
+            border-color: dodgerblue;
+            border-radius: 10px;
+            width: 475px;
+            height: 60px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            background-color: dodgerblue;
+            color: #fff;
+        }
+
+        .login-button:hover {
+            border-color: lightblue;
+            background-color: lightblue;
+            color: #fff;
+        }
+
+        /* 회원가입링크 */
+        .register {
+            margin: 15px 0px;
+        }
+
+        /* footer 버튼 */
+        .google-but {
+            border-radius: 10px;
+            width: 475px;
+            height: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            color: black;
+        }
+
+        .facebook-but,
+        .apple-but {
+            border-radius: 10px;
+            width: 235px;
+            height: 40px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            color: black;
+        }
+
+        .but:hover {
+            border: 3px solid lightblue;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./banner.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./header.css">
+
+
+<body>
+    <!-- banner -->
+    <nav class="banner-container">
+        <a href="./Main.html">
+            <div class="logo"></div>
+        </a>
+        <a href="./Detail.html">DETAIL</a>
+        <!-- 2depth -->
+        <div class="main-menu">
+            <a href="">REVIEW</a>
+                <div class="sub-menu">
+                    <li><a href="./Review-asia.html">ASIA</a></li>
+                    <li><a href="./Review-europe.html">EUROPE</a></li>
+                    <li><a href="./Review-ko.html">KO</a></li>
+                </div>
+        </div>
+            <!-- 2depth -->
+
+        <div class="signin">
+            <a href="./login.html">로그인</a>
+            <a href="./register.html">회원가입</a>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-main">
+            <h2>로그인</h2>
+            <p>해당 페이지를 이용하시려면 본인 확인을 위해 다시 한 번 로그인해 주시기 바랍니다.</p>
+        </div>
+        <div class="login-links">
+            <a class="login-email" href="./login.html">이메일</a>
+            <a class="login-phone" href="./login-phone.html">휴대전화</a>
+        </div>
+        <br>
+        <form action="login" method="post">
+            <div class="login-box">
+                <label for="phone">휴대전화</label>
+                <input class="tel-value" type="tel" id="tel" required placeholder="휴대전화번호"><br>
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" required placeholder="비밀번호"><br>
+
+                <button class="login-button">로그인</button>
+
+                <a href="./register.html">
+                    <span class="register">회원가입</span>
+                </a>
+            </div>
+
+            <!-- 로그인, 회원가입 footer -->
+            <div>
+                <span>혹은 아래 계정을 이용해 로그인</span>
+            </div>
+            <hr>
+
+            <div>
+                <button class="google-but but" type="button">
+                    <img src="https://cdn6.agoda.net/images/universal-login/google-logo-v2.svg" alt="구글">
+                    <span>구글</span>
+                </button>
+                <button class="facebook-but but" type="button">
+                    <img src="https://cdn6.agoda.net/images/universal-login/facebook-logo.svg" alt="페이스북">
+                    <span>페이스북</span>
+                </button>
+                <button class="apple-but but" type="button">
+                    <img src="https://cdn6.agoda.net/images/universal-login/apple-logo.svg" alt="애플">
+                    <span>애플</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- </body> -->
+    <!-- footer -->
+    <footer>
+        <table class="table">
+            <thead>
+                <th>도움말-문의</th>
+                <th>회사명</th>
+                <th>여행지</th>
+                <th>파트너</th>
+                <th>모바일 GREEN</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>도움말센터</td>
+                    <td>회사 소개</td>
+                    <td>국가별</td>
+                    <td>YCS 파트너 포털</td>
+                    <td>IOS</td>
+                </tr>
+                <tr>
+                    <td>자주 묻는 질문 FAQ</td>
+                    <td>채용 정보</td>
+                    <td>도시별</td>
+                    <td>Partner Hub</td>
+                    <td>Android</td>
+                </tr>
+                <tr>
+                    <td>개인정보 처리방침</td>
+                    <td>프레스센터 / 보도자료</td>
+                    <td></td>
+                    <td>광고문의</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>쿠키 정책</td>
+                    <td>블로그</td>
+                    <td></td>
+                    <td>제휴 파트너</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>이용 약관</td>
+                    <td>포인트맥스</td>
+                    <td></td>
+                    <td>커넥티비티 파트너</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>쿠키 설정 관리</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Digital Service Act(EU)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="spon">
+            <a href="https://flyairseoul.com/CW/ko/main.do" target="_blank"><img src="./img/airplane.svg"
+                    alt="airplane"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="./img/caret-right-square-fill.svg"
+                    alt="youtube"></a>
+            <a href="https://www.weather.go.kr/w/index.doa" target="_blank"><img src="./img/cloud-rain-heavy-fill.svg"
+                    alt="weather"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.svg" alt="instagram"></a>
+            <a href="https://www.threads.net/login" target="_blank"><img src="./img/threads-fill.svg" alt="threads"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

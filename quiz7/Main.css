@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.main {
+    padding-top: 10%;
+}
+
+.main img {
+    width: 100%;
+}
+
+
+.part1 {
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    height: 5vh;
+}
+
+.part2 {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10%;
+    padding-bottom: 20px;
+    text-align: center;
+}

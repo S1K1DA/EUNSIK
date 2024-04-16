@@ -1,0 +1,185 @@
+
+/* header */
+
+.header{
+    width: 100%;
+    height: 20vh;
+    background-image: url(./img/beach.jpeg);
+    background-size: cover;
+    color: white;
+    border: none;
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main-box{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 30vh;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 30px;
+    background-color: #f8f7f9;
+}
+
+/* 여행지 input */
+
+.where{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 40%;
+    height: 50px;
+    font-size: 25px;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.where:hover{
+    border: 2px solid skyblue;
+}
+
+/* 인원설정 input */
+
+.people{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 40%;
+    height: 50px;
+    font-size: 25px;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.people:hover{
+    border: 2px solid skyblue;
+}
+
+/* 출발일자 */
+
+.start-label{
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    width: 43%;
+    height: 20px;
+    border: 0.2px solid lightgray;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    background-color: white;
+}
+
+.start{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 43%;
+    height: 50px;
+    border: 0.2px solid lightgray;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.end-label{
+    position: absolute;
+    top: 48%;
+    right: 5%;
+    width: 43%;
+    height: 20px;
+    border: 0.2px solid lightgray;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    background-color: white;
+}
+
+.end{
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    width: 43%;
+    height: 50px;
+    border: 0.2px solid lightgray;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 15px;
+    font-weight: 100;
+    
+}
+
+
+/* 검색 button */
+
+.btn{
+    position: absolute;
+    top: 45%;
+    left: 19%;
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(40, 135, 29);
+}
+
+
+/* 2depth */
+
+.main-menu{
+    position: relative;
+    display: inline;
+}
+
+.main-menu > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.sub-menu > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.sub-menu > li > a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.main-menu:hover .sub-menu {
+    display: inline-block;
+    border: 0.2px solid rgb(255, 255, 255,0.7);
+    width: 120px;
+    padding-bottom: 10px;
+    height: 80px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255,0.7);
+    margin-left: 3px;
+}
+
+

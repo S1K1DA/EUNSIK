@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* banner > button */
+        body {
+            margin: 0px;
+        }
+
+        .banner-container {
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: white;
+            background-size: cover;
+            width: 100%;
+            height: 5vh;
+        }
+
+        .banner-container>a {
+            padding: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* banner > sign in */
+
+        .signin {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .signin>a {
+            padding: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .login-container {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: 480px;
+            height: 100vh;
+            margin: 0 auto;
+            margin-top: 25px;
+            padding: 10px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 0px;
+        }
+
+        /* 회원가입 input박스 */
+        .register-input {
+            display: block;
+            border-radius: 5px;
+            width: 475px;
+            height: 30px;
+        }
+
+
+        /* 회원가입 개인정보 처리방침 체크리스트 */
+        .checkbox-list {
+            background-color: aliceblue;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0px auto;
+            width: 440px;
+            font-size: small;
+        }
+
+        .select-all {
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        .list {
+            list-style-type: none;
+            margin-bottom: 25px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 회원가입 버튼 */
+        .register-but {
+            border-color: dodgerblue;
+            border-radius: 10px;
+            width: 475px;
+            height: 40px;
+            margin-top: 15px;
+            background-color: dodgerblue;
+            color: #fff;
+        }
+
+        .register-but:hover {
+            border-color: lightblue;
+            background-color: lightblue;
+            color: #fff;
+        }
+
+        /* footer 버튼 */
+        .google-but {
+            border-radius: 10px;
+            width: 475px;
+            height: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            color: black;
+        }
+
+        .facebook-but,
+        .apple-but {
+            border-radius: 10px;
+            width: 235px;
+            height: 40px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            color: black;
+        }
+
+        .green-but {
+            border-radius: 10px;
+            width: 475px;
+            height: 30px;
+            background-color: #fff;
+            color: black;
+        }
+
+        .but:hover {
+            border: 3px solid lightblue;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./banner.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./header.css">
+
+
+<body>
+    <!-- banner -->
+    <nav class="banner-container">
+        <a href="./Main.html">
+            <div class="logo"></div>
+        </a>
+        <a href="./Detail.html">DETAIL</a>
+        <!-- 2depth -->
+        <div class="main-menu">
+            <a href="">REVIEW</a>
+                <div class="sub-menu">
+                    <li><a href="./Review-asia.html">ASIA</a></li>
+                    <li><a href="./Review-europe.html">EUROPE</a></li>
+                    <li><a href="./Review-ko.html">KO</a></li>
+                </div>
+        </div>
+            <!-- 2depth -->
+
+        <div class="signin">
+            <a href="./login.html">로그인</a>
+            <a href="./register.html">회원가입</a>
+        </div>
+    </nav>
+    <div>
+        <div class="login-container">
+            <h2>회원가입</h2>
+            <br>
+            <form action="register" method="post">
+                <label for="text">영문 이름(First Name)</label>
+                <input class="register-input" type="text" id="text" required placeholder="영문 이름(First Name)"><br>
+
+                <label for="text">영문 성(Last Name)</label>
+                <input class="register-input" type="text" id="text" required placeholder="영문 성(Last Name)"><br>
+
+                <label for="email">이메일</label>
+                <input class="register-input" type="email" id="email" required placeholder="email"><br>
+
+                <label for="password">비밀번호</label>
+                <input class="register-input" type="password" id="password" required placeholder="비밀번호"><br>
+
+                <label for="password">비밀번호 확인</label>
+                <input class="register-input" type="password" id="password" required placeholder="비밀번호 확인"><br>
+
+                <!-- 개인정보처리방침 -->
+
+                <div>
+                    <hr>
+                    <div>
+                        <span>개인정보 처리방침</span>
+                        <p>본 예약의 처리를 위해 모든 개인정보 처리방침에 동의해 주시기 바랍니다.</p>
+                    </div>
+                    <div class="checkbox-list">
+                        <div>
+                            <label class="select-all">
+                                <input type="checkbox" onclick="">
+                                <span>본인은 아래의 모든 개인정보 처리방침에 동의합니다.</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="select">
+                                <input type="checkbox">
+                                <span class="txt"><a href="">본인은 본 서비스 약관에 동의하며 액18세 이상임을 확인합니다.[필수]</a></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="select">
+                                <input type="checkbox">
+                                <span class="txt"><a href="">본인은 개인정보 처리방침에 따라 본인의 개인 정보를 사용하고 수집하는 것에
+                                        동의합니다.[필수]</a></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="select">
+                                <input type="checkbox">
+                                <span class="txt"><a href="">본인은 개인정보 처리방침에 따라 대한민국 또는 해외에 있는 제3자 본인의 개인 정보를 제공하는 것에
+                                        동의합니다.[필수]</a></span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="register-but">회원가입</button>
+                    <!-- 로그인, 회원가입 footer -->
+                    <hr>
+                    <div>
+                        <span>다른 방법으로 로그인</span>
+                    </div>
+                    <div>
+                        <button class="google-but but" type="button">
+                            <img src="https://cdn6.agoda.net/images/universal-login/google-logo-v2.svg" alt="구글">
+                            <span>구글</span>
+                        </button>
+                        <button class="facebook-but but" type="button">
+                            <img src="https://cdn6.agoda.net/images/universal-login/facebook-logo.svg" alt="페이스북">
+                            <span>페이스북</span>
+                        </button>
+                        <button class="apple-but but" type="button">
+                            <img src="https://cdn6.agoda.net/images/universal-login/apple-logo.svg" alt="애플">
+                            <span>애플</span>
+                        </button>
+                        <button class="green-but" typr="button" onclick="location.href='login.html'"">그린 회원이신가요? 로그인</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+<!-- </body> -->
+<!-- footer -->
+<footer>
+    <table class=" table">
+                            <thead>
+                                <th>도움말-문의</th>
+                                <th>회사명</th>
+                                <th>여행지</th>
+                                <th>파트너</th>
+                                <th>모바일 GREEN</th>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>도움말센터</td>
+                                    <td>회사 소개</td>
+                                    <td>국가별</td>
+                                    <td>YCS 파트너 포털</td>
+                                    <td>IOS</td>
+                                </tr>
+                                <tr>
+                                    <td>자주 묻는 질문 FAQ</td>
+                                    <td>채용 정보</td>
+                                    <td>도시별</td>
+                                    <td>Partner Hub</td>
+                                    <td>Android</td>
+                                </tr>
+                                <tr>
+                                    <td>개인정보 처리방침</td>
+                                    <td>프레스센터 / 보도자료</td>
+                                    <td></td>
+                                    <td>광고문의</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>쿠키 정책</td>
+                                    <td>블로그</td>
+                                    <td></td>
+                                    <td>제휴 파트너</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>이용 약관</td>
+                                    <td>포인트맥스</td>
+                                    <td></td>
+                                    <td>커넥티비티 파트너</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>쿠키 설정 관리</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Digital Service Act(EU)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+                            <div class="spon">
+                                <a href="https://flyairseoul.com/CW/ko/main.do" target="_blank"><img
+                                        src="./img/airplane.svg" alt="airplane"></a>
+                                <a href="https://www.youtube.com/" target="_blank"><img
+                                        src="./img/caret-right-square-fill.svg" alt="youtube"></a>
+                                <a href="https://www.weather.go.kr/w/index.doa" target="_blank"><img
+                                        src="./img/cloud-rain-heavy-fill.svg" alt="weather"></a>
+                                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.svg"
+                                        alt="instagram"></a>
+                                <a href="https://www.threads.net/login" target="_blank"><img
+                                        src="./img/threads-fill.svg" alt="threads"></a>
+                            </div>
+
+                            </footer>
+</body>
+
+</html>

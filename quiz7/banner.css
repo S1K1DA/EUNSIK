@@ -1,0 +1,40 @@
+/* banner > button */
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    height: 5vh;
+}
+
+.banner-container>a {
+    padding: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 61px;
+    height: 24px;
+    background-image: url(./img/logo.png);
+    background-size: cover;
+}
+
+/* banner > sign in */
+
+.signin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signin>a {
+    padding: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
