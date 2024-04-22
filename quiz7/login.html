@@ -202,7 +202,7 @@
                 <label for="password">비밀번호</label>
                 <input type="password" id="password" required placeholder="비밀번호"><br>
 
-                <button class="login-button">로그인</button>
+                <button class="login-button" onclick="login()">로그인</button>
 
                 <a href="./register.html">
                     <span class="register">회원가입</span>
@@ -311,5 +311,23 @@
 
     </footer>
 </body>
+
+<script>
+    function login() {
+        const id = "user@naver.com";
+        const pwd = "qwer1234";
+
+        const inputId = document.getElementById('email').value;
+        const inputPwd = document.getElementById('password').value;
+
+        if (!inputId || !inputPwd) {
+            alert("아이디 또는 비밀번호를 입력해주세요");
+        } else if (inputId !== id || inputPwd !== pwd) {
+            alert("아이디 또는 비밀번호가 틀렸습니다.");
+        } else {
+            alert("로그인 되었습니다.");
+        }
+    }
+</script>
 
 </html>
