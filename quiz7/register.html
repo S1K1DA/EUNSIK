@@ -336,6 +336,14 @@
 
 <script>
 function namecheck() {
+    const inputemamil = document.getElementById("email").value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    if(emailPattern.test(inputemamil)) {
+        alert = "사용 가능";
+    } else {
+        alert = "사용 불가능 이메일";
+    }
     
 }
 
